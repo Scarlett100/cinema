@@ -30,8 +30,8 @@ CREATE TABLE film(
 
 CREATE TABLE customer(
     customer_id INT AUTO_INCREMENT,
-    name VARCHAR(50) UNIQUE NOT NULL,
-    Age VARCHAR(70) UNIQUE NOT NULL,
+    customer_name VARCHAR(50) UNIQUE NOT NULL,
+    age VARCHAR(70) UNIQUE NOT NULL,
     loyalty_member BOOLEAN NOT NULL,
 	PRIMARY KEY(customer_id)
 );
