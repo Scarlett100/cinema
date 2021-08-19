@@ -1,0 +1,42 @@
+Delete DATABASE if exists cinema;
+CREATE DATABASE cinema;
+USE cinema;
+
+-- We need.to.create.our.tables
+-- pizza_id
+-- type
+-- price
+-- age restrics
+
+-- orders
+-- order_id
+-- date_booking
+-- cinema_id
+
+CREATE TABLE cinema(
+    cinema_id INT Auto_INCREMENT,
+    film_type VARCHAR(40) NOT NULL,
+    price DECIMAL NOT NULL,
+    Age restricted BOOLEAN NOT NULL,
+    PRIMARY KEY (film_id)
+);
+
+CREATE TABLE customer(
+                         customer_id INT AUTO_INCREMENT,
+                         name VARCHAR(50) UNIQUE NOT NULL,
+                         Age VARCHAR(70) UNIQUE NOT NULL,
+                         loyalty_member BOOLEAN NOT NULL,
+			PRIMARY KEY(customer_id)
+);
+
+CREATE TABLE order(
+		order INT AUTO_INCREMENT,
+                 fk_cinema_id INT,
+		        fk_customer_id INT,
+                 date_booking DATETIME NOT NULL,
+                  PRIMARY KEY(order_id),
+                  FOREIGN KEY(fk_cinema_id) REFERENCES cinema(cinema_id),
+                  FOREIGN KEY(fk_customer_id) REFERENCES customer(customer_id)
+                
+                 
+);
