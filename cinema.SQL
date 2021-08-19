@@ -1,4 +1,4 @@
-Delete DATABASE if exists cinema;
+DROP DATABASE if exists cinema;
 CREATE DATABASE cinema;
 USE cinema;
 
