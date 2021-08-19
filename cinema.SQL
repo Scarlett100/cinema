@@ -36,7 +36,7 @@ CREATE TABLE customer(
 	PRIMARY KEY(customer_id)
 );
 
-CREATE TABLE order(
+CREATE TABLE orders(
     order_id INT AUTO_INCREMENT,
     fk_film_id INT,
 	fk_customer_id INT,
