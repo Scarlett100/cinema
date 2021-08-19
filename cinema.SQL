@@ -23,7 +23,7 @@ USE cinema;
 CREATE TABLE film(
     film_id INT AUTO_INCREMENT,
     film_type VARCHAR(40) NOT NULL,
-    price DECIMAL NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
     Age_restricted BOOLEAN NOT NULL,
     PRIMARY KEY(film_id)
 );
